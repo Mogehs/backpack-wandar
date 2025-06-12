@@ -1,0 +1,191 @@
+{
+  "languageSwitcher": {
+    "en": "English",
+    "de": "German",
+    "sr": "Serbian"
+  },
+  "navbar": {
+    "home": "Startseite",
+    "coaching": "Coaching",
+    "services": "Digitale Dienstleistungen",
+    "digital": "Gemeinschaft",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Backpack Wander",
+    "subtitle": "Ihr Partner für neue Wege",
+    "services": "Individuelles Coaching | Webdesign | Digitale Strategie",
+    "buttons": {
+      "coaching": "Coaching buchen",
+      "webDesign": "Webdesign",
+      "digitalStrategy": "Digitale Strategie"
+    },
+    "description": "Wir unterstützen Freelancer, Expats und Visionäre beim Aufbau ihres Online-Geschäfts – authentisch, mehrsprachig und zukunftsorientiert. Wir setzen auf klare Strategien, kreative Freiheit und nachhaltiges Wachstum. Gemeinsam gestalten wir digitale Lösungen, die wirklich zu Ihnen passen. Ihr Weg in die digitale Selbstständigkeit beginnt genau hier."
+  },
+  "whatWeDo": {
+    "title": "Was Wir Tun",
+    "paragraph1": "Wir helfen Menschen, der 9-bis-5-Routine zu entkommen und ein flexibles, erfüllendes Leben im digitalen Raum zu gestalten. Backpack Wander vereint Coaching, Kreativität und digitale Lösungen – für Sie, Ihr Team oder Ihr Unternehmen. Mit einem ganzheitlichen Ansatz unterstützen wir Sie dabei, Ihre Visionen Wirklichkeit werden zu lassen.",
+    "paragraph2": "Ob Sie Ihr Online-Business aufbauen, eine klare Markenstrategie entwickeln oder Ihre digitale Präsenz gestalten – wir stehen Ihnen zur Seite. Entdecken Sie neue Wege, arbeiten Sie ortsunabhängig und entwickeln Sie ein Geschäft, das wirklich zu Ihnen passt.",
+    "imageAlt": "Frau, die remote an einem Laptop arbeitet"
+  },
+  "weOffer": {
+    "title": "Wir Bieten",
+    "items": {
+      "coaching": {
+        "title": "Business Coaching & Mentoring",
+        "description": "Praktische Unterstützung für Ihr digitales Projekt – von der Idee bis zum Einkommen."
+      },
+      "webDesign": {
+        "title": "Webdesign & Branding (über BW Digits)",
+        "description": "Maßgeschneiderte Websites und visuelle Auftritte – mehrsprachig & benutzerfreundlich."
+      },
+      "digitalMarketing": {
+        "title": "Digitale Marketingstrategie",
+        "description": "SEO, Social Media und E-Mail-Marketing: einfache, menschliche und effektive Strategien, die Ihre Marke wachsen lassen."
+      },
+      "community": {
+        "title": "Community & Netzwerk",
+        "description": "Durch unsere WhatsApp-Gruppe und geplante Retreats und Workshops verbinden wir Menschen, die gemeinsam wachsen wollen."
+      },
+      "workshops": {
+        "title": "Workshops & Retreats",
+        "description": "Nehmen Sie an unseren praktischen Workshops und immersiven Retreats teil, um zu lernen, zu netzwerken und mit Gleichgesinnten zu wachsen."
+      }
+    }
+  },
+  "visible": {
+    "title": "Machen Sie Ihre Idee sichtbar",
+    "description": "Sind Sie bereit, dem 9-bis-5-Alltag zu entkommen und Ihr volles Potenzial im digitalen Raum zu entfalten? Wir glauben an ein Leben voller Freiheit, Flexibilität und Sinn. Ob Sie Expat, Selbstständiger oder Unternehmer sind – wir begleiten Sie auf jedem Schritt des Weges. Mit strategischem Coaching und bewährten digitalen Lösungen helfen wir Ihnen, Ihre Vision Wirklichkeit werden zu lassen und finanzielle Unabhängigkeit von überall auf der Welt zu erreichen.",
+    "flipIntro": "Wir bieten ",
+    "flipOutro": "um Ihr Geschäft zu transformieren",
+    "services": {
+      "coaching": "Coaching & Mentoring",
+      "webDesign": "Webdesign & Branding",
+      "marketing": "Digitale Marketingstrategie",
+      "community": "Community & Netzwerk"
+    }
+  },
+  "ourVision": {
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Unser Ziel ist es, ein globales Netzwerk von leistungsstarken Fachleuten aufzubauen, die durch strategisches Coaching und digitales Fachwissen finanzielle Unabhängigkeit und geschäftlichen Erfolg erreichen. Wir verbinden gerne, helfen, teilen Wissen, fördern Freundschaft und unterstützen einander.",
+      "imageAlt": "Illustration unserer Vision"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Bei Backpack Wander GmbH ist es unsere Mission, Menschen dabei zu helfen, der 9-bis-5-Routine zu entkommen und ein Leben in Freiheit, Flexibilität und mit Sinn zu führen. Wir befähigen Einzelpersonen, digitale Unternehmen aufzubauen, remote zu arbeiten und ihr Leben nach eigenen Vorstellungen zu gestalten – von überall auf der Welt.",
+      "imageAlt": "Illustration unserer Mission"
+    },
+    "coaching": {
+      "title": "Buchen Sie eine kostenlose Coaching-Sitzung",
+      "description": "Entfalten Sie Ihr Potenzial – Kostenlos. Erhalten Sie individuelle Unterstützung, um Ihre Vision zu klären, Herausforderungen zu überwinden und Ihren nächsten großen Schritt mit Zuversicht zu gehen. Diese unverbindliche Session ist ideal für Expats, Freelancer und angehende Unternehmer, die wachsen möchten.",
+      "imageAlt": "Illustration der kostenlosen Coaching-Sitzung"
+    },
+    "appointment": {
+      "title": "Termin vereinbaren",
+      "description": "Möchten Sie lieber eine persönliche Beratung, um herauszufinden, wie wir Sie in Ihrer beruflichen oder persönlichen Entwicklung unterstützen können? Vereinbaren Sie eine individuell auf Sie zugeschnittene Beratung zu einem für Sie passenden Zeitpunkt. In einem vertraulichen Gespräch nehmen wir uns Zeit, auf Ihre Anliegen einzugehen und gemeinsam erste Lösungsansätze zu entwickeln. Nutzen Sie die Chance, neue Perspektiven zu gewinnen und konkrete nächste Schritte zu planen.",
+      "imageAlt": "Illustration zur Terminvereinbarung"
+    }
+  },
+  "potential": {
+    "title": "Entfalte dein Potenzial mit",
+    "cards": {
+      "coaching": {
+        "category": "Business Coaching & Mentoring",
+        "title": "Praktische Unterstützung für dein digitales Projekt – von der Idee bis zum Einkommen.",
+        "description": "Verwandle deine Ideen in profitable digitale Unternehmungen. Unser Business-Coaching bietet maßgeschneiderte Anleitung, um die Komplexität des Online-Unternehmertums zu bewältigen.",
+        "button": "Coaching-Sitzung buchen"
+      },
+      "webDesign": {
+        "category": "Webdesign & Branding (über BW Digits)",
+        "title": "Maßgeschneiderte Websites und visuelles Erscheinungsbild – mehrsprachig & benutzerfreundlich.",
+        "description": "Websites, die Besucher fesseln und in treue Kunden verwandeln. Wir erstellen schöne, reaktionsfähige Websites, die deine Marke authentisch repräsentieren.",
+        "button": "Unser Portfolio ansehen"
+      },
+      "marketing": {
+        "category": "Digitale Marketingstrategie",
+        "title": "SEO, Social Media und E-Mail-Marketing: einfache, menschliche und effektive Strategien, die deine Marke wachsen lassen.",
+        "description": "Hebe dich in der digitalen Landschaft mit Strategien ab, die Ergebnisse liefern. Unser digitaler Marketingansatz kombiniert SEO-Optimierung, ansprechende Social-Media-Kampagnen und gezieltes E-Mail-Marketing.",
+        "button": "Marketing-Services erkunden"
+      },
+      "community": {
+        "category": "Community & Netzwerk",
+        "title": "Durch unsere WhatsApp-Gruppe und geplante Retreats und Workshops verbinden wir Menschen, die gemeinsam wachsen wollen.",
+        "description": "Tritt einem unterstützenden Netzwerk von gleichgesinnten Unternehmern und Visionären bei. Unsere Community bringt digitale Nomaden, Freelancer und Geschäftsinhaber zusammen, die Wissen teilen.",
+        "button": "Tritt unserer Community bei"
+      }
+    }
+  },
+  "contact": {
+    "contactUs": "Kontaktiere uns",
+    "contactUsSubtitle": "Haben Sie Fragen oder benötigen Sie Hilfe? Wir sind hier, um Ihnen bei der Planung Ihres perfekten Abenteuers zu helfen.",
+    "getInTouch": "Kontakt aufnehmen",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "businessHours": "Geschäftszeiten",
+    "mondayToFriday": "Montag bis Freitag",
+    "weekend": "Wochenende",
+    "sendUsMessage": "Senden Sie uns eine Nachricht",
+    "fullName": "Vollständiger Name",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Senden...",
+    "messageSent": "Ihre Nachricht wurde gesendet. Wir werden uns in Kürze bei Ihnen melden!",
+    "nameRequired": "Name ist erforderlich",
+    "emailRequired": "E-Mail ist erforderlich",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "subjectRequired": "Betreff ist erforderlich",
+    "messageRequired": "Nachricht ist erforderlich"
+  },
+  "footer": {
+    "tagline": "Ihr Partner für neue Wege im digitalen Business, Coaching und Webdesign.",
+    "quickLinks": "Schnellzugriff",
+    "links": {
+      "about": "Über Uns",
+      "services": "Unsere Leistungen",
+      "coaching": "Business Coaching",
+      "webdesign": "Webdesign",
+      "blog": "Blog"
+    },
+    "contactUs": "Kontakt",
+    "newsletter": "Newsletter",
+    "newsletterText": "Abonnieren Sie unseren Newsletter für die neuesten Updates und Einblicke.",
+    "emailPlaceholder": "Ihre E-Mail-Adresse",
+    "subscribe": "Abonnieren",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "imprint": "Impressum"
+  },
+  "potential": {
+    "title": "Entfalten Sie Ihr Potenzial Mit",
+    "cards": {
+      "coaching": {
+        "category": "Business Coaching & Mentoring",
+        "title": "Praktische Unterstützung für Ihr digitales Projekt – von der Idee bis zum Einkommen.",
+        "description": "Verwandeln Sie Ihre Ideen in profitable digitale Unternehmen. Unser Business-Coaching bietet maßgeschneiderte Anleitungen, um die Komplexität des Online-Unternehmertums zu bewältigen.",
+        "button": "Coaching-Sitzung buchen"
+      },
+      "webDesign": {
+        "category": "Webdesign & Branding (über BW Digits)",
+        "title": "Maßgeschneiderte Websites und visuelle Auftritte – mehrsprachig & benutzerfreundlich.",
+        "description": "Websites, die Besucher fesseln und zu treuen Kunden machen. Wir erstellen schöne, responsive Websites, die Ihre Marke authentisch repräsentieren.",
+        "button": "Unser Portfolio ansehen"
+      },
+      "marketing": {
+        "category": "Digitale Marketingstrategie",
+        "title": "SEO, Social Media und E-Mail-Marketing: einfache, menschliche und effektive Strategien, die Ihre Marke wachsen lassen.",
+        "description": "Heben Sie sich in der digitalen Landschaft mit Strategien ab, die Ergebnisse liefern. Unser digitaler Marketing-Ansatz kombiniert SEO-Optimierung, ansprechende Social-Media-Kampagnen und gezieltes E-Mail-Marketing.",
+        "button": "Marketing-Services erkunden"
+      },
+      "community": {
+        "category": "Community & Netzwerk",
+        "title": "Durch unsere WhatsApp-Gruppe und geplante Retreats und Workshops verbinden wir Menschen, die gemeinsam wachsen wollen.",
+        "description": "Treten Sie einem unterstützenden Netzwerk gleichgesinnter Unternehmer und Visionäre bei. Unsere Community bringt digitale Nomaden, Freiberufler und Unternehmer zusammen, die Wissen teilen.",
+        "button": "Unserer Community beitreten"
+      }
+    }
+  }
+}

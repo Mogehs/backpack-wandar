@@ -1,0 +1,163 @@
+{
+  "languageSwitcher": {
+    "en": "English",
+    "de": "German",
+    "sr": "Serbian"
+  },
+  "navbar": {
+    "home": "Home",
+    "coaching": "Coaching",
+    "services": "Digital Services",
+    "digital": "Community",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Backpack Wander",
+    "subtitle": "Your partner for new paths",
+    "services": "Individual coaching | Web design | Digital strategy",
+    "buttons": {
+      "coaching": "Book Coaching",
+      "webDesign": "Web Design",
+      "digitalStrategy": "Digital Strategy"
+    },
+    "description": "We support freelancers, expats, and visionaries in building their online businesses – authentic, multilingual, and future-oriented. We value clear strategies, creative freedom, and sustainable growth. Together, we design digital solutions that truly fit your needs. Your path to digital self-employment begins right here."
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "paragraph1": "We help people escape the 9-to-5 routine and create a flexible, fulfilling life in the digital space. Backpack Wander brings together coaching, creativity, and digital solutions – for you, your team, or your company. With a holistic approach, we support you in turning your visions into reality.",
+    "paragraph2": "Whether you're building your online business, developing a clear brand strategy, or designing your digital presence – we're at your side. Discover new paths, work remotely, and develop a business that truly suits you.",
+    "imageAlt": "Woman working remotely on a laptop"
+  },
+  "weOffer": {
+    "title": "We Offer",
+    "items": {
+      "coaching": {
+        "title": "Business Coaching & Mentoring",
+        "description": "Practical support for your digital project – from the idea to income."
+      },
+      "webDesign": {
+        "title": "Web design & branding (via BW Digits)",
+        "description": "Tailor-made websites and visual appearances – multilingual & user-friendly."
+      },
+      "digitalMarketing": {
+        "title": "Digital marketing strategy",
+        "description": "SEO, social media, and email marketing: simple, human, and effective strategies that will grow your brand."
+      },
+      "community": {
+        "title": "Community & Network",
+        "description": "Through our WhatsApp group and scheduled retreats and workshops, we connect people who want to grow together."
+      },
+      "workshops": {
+        "title": "Workshops & Retreats",
+        "description": "Join our hands-on workshops and immersive retreats to learn, network, and grow with like-minded professionals."
+      }
+    }
+  },
+  "visible": {
+    "title": "Make your idea visible",
+    "description": "Are you ready to escape the 9-to-5 everyday life and unleash your full potential in the digital space? We believe in a life full of freedom, flexibility and meaning. Whether you're an expat, self-employed or entrepreneur – we'll be with you every step of the way. With strategic coaching and proven digital solutions, we help you make your vision a reality and achieve financial independence from anywhere in the world.",
+    "flipIntro": "We offer ",
+    "flipOutro": "to transform your business",
+    "services": {
+      "coaching": "Coaching & Mentoring",
+      "webDesign": "Web Design & Branding",
+      "marketing": "Digital Marketing Strategy",
+      "community": "Community & Network"
+    }
+  },
+  "ourVision": {
+    "vision": {
+      "title": "Our Vision",
+      "description": "Our goal is to build a global network of high-performing professionals who achieve financial independence and business success through strategic coaching and digital expertise. We enjoy connecting, helping, sharing knowledge, fostering friendship, and supporting each other.",
+      "imageAlt": "Our vision illustration"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "At Backpack Wander GmbH, our mission is to help people escape the 9-to-5 routine and live a life of freedom, flexibility, and purpose. We empower individuals to build digital businesses, work remotely, and live their lives on their own terms—from anywhere in the world.",
+      "imageAlt": "Our mission illustration"
+    },
+    "coaching": {
+      "title": "Book a free coaching session",
+      "description": "Unleash your potential – Free Get personalized support to clarify your vision, overcome challenges, and take your next big step with confidence. This no-obligation session is ideal for expats, freelancers, and aspiring entrepreneurs looking to grow.",
+      "imageAlt": "Free coaching session illustration"
+    },
+    "appointment": {
+      "title": "Make an appointment",
+      "description": "Would you prefer a personal consultation to find out how we can support you in your professional or personal development? Arrange a personalized consultation at a time that suits you. In a confidential conversation, we'll take the time to address your issues and develop initial solutions together. Take advantage of the opportunity to gain new perspectives and plan concrete next steps.",
+      "imageAlt": "Book an appointment illustration"
+    }
+  },
+
+  "contact": {
+    "contactUs": "Contact Us",
+    "contactUsSubtitle": "Have questions or need assistance? We're here to help you plan your perfect adventure.",
+    "getInTouch": "Get in Touch",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "businessHours": "Business Hours",
+    "mondayToFriday": "Monday to Friday",
+    "weekend": "Weekend",
+    "sendUsMessage": "Send us a Message",
+    "fullName": "Full Name",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "messageSent": "Your message has been sent. We will get back to you soon!",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required"
+  },
+  "footer": {
+    "tagline": "Your partner for new paths in digital business, coaching, and web design.",
+    "quickLinks": "Quick Links",
+    "links": {
+      "about": "About Us",
+      "services": "Our Services",
+      "coaching": "Business Coaching",
+      "webdesign": "Web Design",
+      "blog": "Blog"
+    },
+    "contactUs": "Contact Us",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe to our newsletter for the latest updates and insights.",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "imprint": "Imprint"
+  },
+  "potential": {
+    "title": "Unlock Your Potential With",
+    "cards": {
+      "coaching": {
+        "category": "Business Coaching & Mentoring",
+        "title": "Practical support for your digital project – from the idea to income.",
+        "description": "Transform your ideas into profitable digital ventures. Our business coaching provides tailored guidance to navigate the complexities of online entrepreneurship.",
+        "button": "Book a Coaching Session"
+      },
+      "webDesign": {
+        "category": "Web design & branding (via BW Digits)",
+        "title": "Tailor-made websites and visual appearances – multilingual & user-friendly.",
+        "description": "Websites that captivate and convert visitors into loyal customers. We create beautiful, responsive websites that represent your brand authentically.",
+        "button": "View Our Portfolio"
+      },
+      "marketing": {
+        "category": "Digital marketing strategy",
+        "title": "SEO, social media, and email marketing: simple, human, and effective strategies that will grow your brand.",
+        "description": "Stand out in the digital landscape with strategies that deliver results. Our digital marketing approach combines SEO optimization, engaging social media campaigns, and targeted email marketing.",
+        "button": "Explore Marketing Services"
+      },
+      "community": {
+        "category": "Community & Network",
+        "title": "Through our WhatsApp group and scheduled retreats and workshops, we connect people who want to grow together.",
+        "description": "Join a supportive network of like-minded entrepreneurs and visionaries. Our community brings together digital nomads, freelancers, and business owners who share knowledge.",
+        "button": "Join Our Community"
+      }
+    }
+  }
+}
