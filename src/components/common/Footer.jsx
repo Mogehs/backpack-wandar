@@ -92,7 +92,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="http://setfreeway.com"
+                  target="_blank"
                   className="text-gray-300 hover:text-green transition-colors"
                 >
                   {t("footer.links.coaching")}
@@ -100,18 +101,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="http://bwdigit.de"
+                  target="_blank"
                   className="text-gray-300 hover:text-green transition-colors"
                 >
                   {t("footer.links.webdesign")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-green transition-colors"
-                >
-                  {t("footer.links.blog")}
                 </a>
               </li>
             </ul>
