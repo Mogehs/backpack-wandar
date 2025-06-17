@@ -14,7 +14,7 @@ const Hero = () => {
         alt="Hero"
         className="w-full max-sm:h-[120vh] md:h-auto  object-cover"
       />
-      <div className="h-[35rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md absolute top-0 px-4 md:px-6 lg:px-8">
+      <div className="h-[60rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md absolute top-0 px-4 md:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center text-center z-20 relative gap-2 px-3 sm:px-0">
           <div className="h-fit overflow-hidden mt-20 flex items-center justify-center gap-2">
             <motion.h1
@@ -48,7 +48,6 @@ const Hero = () => {
           >
             {t("hero.subtitle")}
           </motion.p>
-
           {/* Service buttons with divider lines */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -87,7 +86,6 @@ const Hero = () => {
               {t("hero.buttons.digitalStrategy")}
             </motion.button>
           </motion.div>
-
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -108,6 +106,34 @@ const Hero = () => {
             />
             {/* Radial Gradient to prevent sharp edges */}
             <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(550px_230px_at_top,transparent_50%,white)]"></div>
+          </div>
+          <div className="w-full mt-4 sm:mt-8 px-4 sm:px-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className="w-full sm:w-2/5 rounded-t-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 relative"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+              <img
+                src="/images/hero1.png"
+                alt="Business strategies"
+                className="w-full h-full object-cover transition-all duration-500"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.8 }}
+              className="w-full sm:w-2/5 rounded-t-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 relative mt-10"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+              <img
+                src="/images/hero2.png"
+                alt="Digital solutions"
+                className="w-full h-full object-cover transition-all duration-500"
+              />
+            </motion.div>
           </div>
         </div>
       </div>

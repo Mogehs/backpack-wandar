@@ -28,7 +28,7 @@ export default function WhatWeDo() {
     },
   };
   return (
-    <div className="pb-5 px-4 md:px-6 lg:px-8 bg-black text-white md:mt-55 lg:mt-20">
+    <div className="pb-5 px-4 md:px-6 lg:px-8 bg-black text-white md:mt-170 mt-120 lg:mt-90">
       <motion.div
         initial="hidden"
         whileInView="visible"
