@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Facebook,
@@ -8,11 +8,26 @@ import {
   Mail,
   MapPin,
   Phone,
+  CheckCircle,
 } from "lucide-react";
 
 const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email) {
+      setShowSuccess(true);
+      setEmail("");
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        setShowSuccess(false);
+      }, 5000);
+    }
+  };
 
   return (
     <footer className="bg-black text-white pt-12 pb-8 px-4 md:px-8 mt-20">
@@ -131,19 +146,29 @@ const Footer = () => {
               {t("footer.newsletter")}
             </h3>
             <p className="mb-4 text-gray-300">{t("footer.newsletterText")}</p>
-            <form className="space-y-2">
-              <input
-                type="email"
-                placeholder={t("footer.emailPlaceholder")}
-                className="w-full px-4 py-2 bg-gray-800 rounded-lg text-white border border-gray-700 focus:ring-2 focus:ring-green focus:border-transparent"
-              />
-              <button
-                type="submit"
-                className="w-full bg-green hover:bg-opacity-90 text-white font-medium py-2 rounded-lg transition-colors"
-              >
-                {t("footer.subscribe")}
-              </button>
-            </form>
+            {showSuccess ? (
+              <div className="bg-green bg-opacity-20 border border-green rounded-lg p-3 mb-3 flex items-center">
+                <CheckCircle size={20} className="text-green mr-2" />
+                <p className="text-white text-sm">{t("newsletter.title")}</p>
+              </div>
+            ) : (
+              <form className="space-y-2" onSubmit={handleSubmit}>
+                <input
+                  type="email"
+                  placeholder={t("footer.emailPlaceholder")}
+                  className="w-full px-4 py-2 bg-gray-800 rounded-lg text-white border border-gray-700 focus:ring-2 focus:ring-green focus:border-transparent"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button
+                  type="submit"
+                  className="w-full bg-green hover:bg-opacity-90 text-white font-medium py-2 rounded-lg transition-colors"
+                >
+                  {t("footer.subscribe")}
+                </button>
+              </form>
+            )}
           </div>
         </div>
 

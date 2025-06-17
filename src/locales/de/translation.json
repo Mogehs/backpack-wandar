@@ -288,5 +288,8 @@
     "successTitle": "Erfolg!",
     "successMessage": "Danke! Wir werden uns bald mit Ihnen in Verbindung setzen, um Ihr Beratungsgespräch zu planen.",
     "dataSecurityNote": "Ihre Daten sind sicher und werden nur verwendet, um Sie bezüglich Ihres Beratungsgesprächs zu kontaktieren."
+  },
+  "newsletter": {
+    "title": "Erfolgreich abonniert !"
   }
 }

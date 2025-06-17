@@ -289,5 +289,9 @@
     "successTitle": "Success!",
     "successMessage": "Thanks! We'll be in touch soon to schedule your discovery call.",
     "dataSecurityNote": "Your data is secure and will only be used to contact you about your discovery call."
+  },
+
+  "newsletter": {
+    "title": "Thank you for subscribing !"
   }
 }
