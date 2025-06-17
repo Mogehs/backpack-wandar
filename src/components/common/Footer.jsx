@@ -21,8 +21,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-green">
-              BackpackWander
+            <h3 className="text-3xl font-bold mb-4 text-green">
+              <span className="text-white">Backpack</span> Wander
             </h3>
             <p className="mb-4 text-gray-300">{t("footer.tagline")}</p>
             <div className="flex space-x-4">
@@ -111,16 +111,16 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-green mt-1" />
                 <span className="text-gray-300">
-                  123 Digital Lane, Web City, 10111
+                  Ewaldstrase 28, 45699, Herten
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-green" />
-                <span className="text-gray-300">+49 123 456 7890</span>
+                <span className="text-gray-300">+49 172 8137 111</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-green" />
-                <span className="text-gray-300">info@backpackwander.com</span>
+                <span className="text-gray-300">hello@backpackwander.de</span>
               </div>
             </div>
           </div>

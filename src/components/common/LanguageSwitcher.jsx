@@ -27,9 +27,21 @@ const LanguageSwitcher = () => {
 
   // Available languages
   const languages = [
-    { code: "en", label: t("languageSwitcher.en") },
-    { code: "de", label: t("languageSwitcher.de") },
-    { code: "sr", label: t("languageSwitcher.sr") },
+    {
+      code: "en",
+      label: t("languageSwitcher.en"),
+      flag: "/images/flags/en.svg",
+    },
+    {
+      code: "de",
+      label: t("languageSwitcher.de"),
+      flag: "/images/flags/de.svg",
+    },
+    {
+      code: "sr",
+      label: t("languageSwitcher.sr"),
+      flag: "/images/flags/sr.svg",
+    },
   ];
 
   // Get current language label
@@ -39,9 +51,14 @@ const LanguageSwitcher = () => {
   return (
     <div className="relative" ref={dropdownRef}>
       <button
-        className="flex items-center gap-1 px-3 py-2 text-sm rounded bg-white text-black hover:bg-gray-100"
+        className="flex items-center gap-2 px-3 py-2 text-sm rounded bg-white text-black hover:bg-gray-100"
         onClick={() => setIsOpen(!isOpen)}
       >
+        <img
+          src={currentLanguage.flag}
+          alt={`${currentLanguage.label} flag`}
+          className="w-6 h-4 object-cover"
+        />
         {currentLanguage.label}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -71,9 +88,14 @@ const LanguageSwitcher = () => {
                     i18n.language === lang.code
                       ? "bg-green text-white"
                       : "text-black hover:bg-gray-100"
-                  }`}
+                  } flex items-center gap-2`}
                   onClick={() => changeLanguage(lang.code)}
                 >
+                  <img
+                    src={lang.flag}
+                    alt={`${lang.label} flag`}
+                    className="w-6 h-4 object-cover"
+                  />
                   {lang.label}
                 </button>
               </li>

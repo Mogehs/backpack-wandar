@@ -6,9 +6,10 @@
   },
   "navbar": {
     "home": "Startseite",
-    "coaching": "Coaching",
+    "coaching": "Coaching & Kurse",
     "services": "Digitale Dienstleistungen",
     "digital": "Gemeinschaft",
+    "shop": "Shop",
     "contact": "Kontakt"
   },
   "hero": {
@@ -16,46 +17,103 @@
     "subtitle": "Ihr Partner für neue Wege",
     "services": "Individuelles Coaching | Webdesign | Digitale Strategie",
     "buttons": {
-      "coaching": "Coaching buchen",
+      "coaching": "Individuelles Coaching",
       "webDesign": "Webdesign",
-      "digitalStrategy": "Digitale Strategie"
+      "digitalStrategy": "Digitales Marketing"
     },
     "description": "Wir unterstützen Freelancer, Expats und Visionäre beim Aufbau ihres Online-Geschäfts – authentisch, mehrsprachig und zukunftsorientiert. Wir setzen auf klare Strategien, kreative Freiheit und nachhaltiges Wachstum. Gemeinsam gestalten wir digitale Lösungen, die wirklich zu Ihnen passen. Ihr Weg in die digitale Selbstständigkeit beginnt genau hier."
   },
   "whatWeDo": {
     "title": "Was Wir Tun",
-    "paragraph1": "Wir helfen Menschen, der 9-bis-5-Routine zu entkommen und ein flexibles, erfüllendes Leben im digitalen Raum zu gestalten. Backpack Wander vereint Coaching, Kreativität und digitale Lösungen – für Sie, Ihr Team oder Ihr Unternehmen. Mit einem ganzheitlichen Ansatz unterstützen wir Sie dabei, Ihre Visionen Wirklichkeit werden zu lassen.",
-    "paragraph2": "Ob Sie Ihr Online-Business aufbauen, eine klare Markenstrategie entwickeln oder Ihre digitale Präsenz gestalten – wir stehen Ihnen zur Seite. Entdecken Sie neue Wege, arbeiten Sie ortsunabhängig und entwickeln Sie ein Geschäft, das wirklich zu Ihnen passt.",
-    "imageAlt": "Frau, die remote an einem Laptop arbeitet"
+    "subtitle": "Stärkung Ihrer persönlichen und digitalen Reise.",
+    "card1": {
+      "title": "Brechen Sie aus & gestalten Sie Ihr Leben neu",
+      "description": "Wir helfen Ihnen, dem 9-bis-5-Alltag zu entkommen und ein flexibles, erfüllendes Leben im digitalen Raum aufzubauen – eines, das mit Ihren persönlichen Werten und Leidenschaften übereinstimmt."
+    },
+    "card2": {
+      "title": "Coaching trifft Kreativität",
+      "description": "Durch eine ganzheitliche Mischung aus Coaching, kreativer Leitung und digitalen Werkzeugen befähigen wir Sie, Ihr Team oder Ihr Unternehmen, Ideen in die Realität umzusetzen."
+    },
+    "card3": {
+      "title": "Gestalten Sie ein Leben, das zu Ihnen passt",
+      "description": "Ob Sie ein Online-Business starten, Ihre Marke formen oder Ihre digitale Präsenz gestalten – wir begleiten Sie dabei, ortsunabhängig zu arbeiten und ein Leben zu gestalten, das wirklich zu Ihnen passt."
+    },
+    "cta": {
+      "question": "Bereit, Ihren nächsten Schritt zu entdecken?",
+      "button": "Buchen Sie einen kostenlosen Erstberatungstermin"
+    },
+    "beginSection": {
+      "title": "Wo möchten Sie beginnen?",
+      "subtitle": "Entdecken Sie, wie wir Ihre Reise unterstützen können – wählen Sie den Weg, der zu Ihren Zielen passt.",
+      "coaching": {
+        "title": "Coaching",
+        "description": "Befreien Sie sich vom 9-bis-5-Alltag und gestalten Sie ein Leben, das Sie lieben.",
+        "button": "Kostenlose Sitzung Transformatives Coaching",
+        "imageAlt": "Coaching-Dienstleistungen"
+      },
+      "digital": {
+        "title": "Digitale Dienste",
+        "description": "Lassen Sie Ihre Marke mit Strategie, Design und intelligenten digitalen Werkzeugen wachsen.",
+        "button": "Finden Sie digitale Lösungen für Ihre Bedürfnisse",
+        "imageAlt": "Digitale Dienstleistungen"
+      },
+      "community": {
+        "title": "Gemeinschaft",
+        "description": "Sie müssen nicht alleine wachsen.",
+        "button": "Klicken Sie, um den Gemeinschaftsraum zu erkunden",
+        "imageAlt": "Gemeinschaftsraum"
+      }
+    }
   },
   "weOffer": {
     "title": "Wir Bieten",
     "items": {
       "coaching": {
         "title": "Business Coaching & Mentoring",
-        "description": "Praktische Unterstützung für Ihr digitales Projekt – von der Idee bis zum Einkommen."
+        "description": "Von der Idee bis zur Gründung eines Unternehmens. Praktische Unterstützung & bewährte Anleitung.",
+        "button": "Buchen Sie eine kostenlose Sitzung"
       },
       "webDesign": {
-        "title": "Webdesign & Branding (über BW Digits)",
-        "description": "Maßgeschneiderte Websites und visuelle Auftritte – mehrsprachig & benutzerfreundlich."
+        "title": "Webdesign & Branding - BW Digit",
+        "description": "Schöne, mehrsprachige Websites, die auf Sie zugeschnitten sind. Visuelles Erscheinungsbild & benutzerfreundlich.",
+        "button": "Unsere Arbeit ansehen"
       },
       "digitalMarketing": {
-        "title": "Digitale Marketingstrategie",
-        "description": "SEO, Social Media und E-Mail-Marketing: einfache, menschliche und effektive Strategien, die Ihre Marke wachsen lassen."
+        "title": "Digitale Strategie & Marketing",
+        "description": "SEO—Technisch, On- & Off-site mit hochwertigen Backlinks. Social-Media-Marketing mit Ergebnissen. E-Mail- & Content-Marketing—auf menschliche Art. Effektive Strategien, die Ihre Marke wachsen lassen.",
+        "button": "Services erkunden"
       },
       "community": {
         "title": "Community & Netzwerk",
-        "description": "Durch unsere WhatsApp-Gruppe und geplante Retreats und Workshops verbinden wir Menschen, die gemeinsam wachsen wollen."
+        "description": "Treten Sie einer globalen Gruppe von Kreativen, Gründern & Freiberuflern bei. Wir verbinden Menschen, die gemeinsam wachsen wollen.",
+        "button": "Unserer Community beitreten"
       },
       "workshops": {
-        "title": "Workshops & Retreats",
-        "description": "Nehmen Sie an unseren praktischen Workshops und immersiven Retreats teil, um zu lernen, zu netzwerken und mit Gleichgesinnten zu wachsen."
+        "title": "Kurse & Webinare - Set Free Way",
+        "description": "Lernen, wachsen und vernetzen Sie sich in der digitalen Welt. Schließen Sie sich unserem praktischen Netzwerk mit Gleichgesinnten an.",
+        "button": "Kurse ansehen"
       }
     }
   },
   "visible": {
-    "title": "Machen Sie Ihre Idee sichtbar",
-    "description": "Sind Sie bereit, dem 9-bis-5-Alltag zu entkommen und Ihr volles Potenzial im digitalen Raum zu entfalten? Wir glauben an ein Leben voller Freiheit, Flexibilität und Sinn. Ob Sie Expat, Selbstständiger oder Unternehmer sind – wir begleiten Sie auf jedem Schritt des Weges. Mit strategischem Coaching und bewährten digitalen Lösungen helfen wir Ihnen, Ihre Vision Wirklichkeit werden zu lassen und finanzielle Unabhängigkeit von überall auf der Welt zu erreichen.",
+    "title": "Machen Sie Ihre Idee sichtbar.",
+    "customVision": "Wir helfen Menschen, der 9-bis-5-Routine zu entkommen. Unser Ziel ist Freiheit, Flexibilität und Sinnhaftigkeit. Wir befähigen Sie, digitale Unternehmen aufzubauen. Arbeiten Sie von überall auf der Welt. Leben Sie nach Ihren eigenen Vorstellungen.",
+    "customMission": "Wir bauen ein globales Netzwerk erfolgreicher Fachleute auf. Wir helfen dabei, finanzielle Unabhängigkeit durch Coaching zu erreichen. Wir bieten digitales Fachwissen für Geschäftswachstum. Wir verbinden, teilen Wissen und unterstützen einander. Freundschaft und Gemeinschaft sind unsere Grundwerte.",
+    "support": {
+      "line1": "Wir waren in Ihrer Situation. Es ist nicht einfach, aber Sie sind nicht allein!",
+      "line2": "Es ist uns eine Freude, Ihnen in allem zu helfen, was Sie brauchen.",
+      "line3": "Wir freuen uns, dass Sie mit uns online wachsen und gedeihen!"
+    },
+    "intro": {
+      "title": "Sie sind auf diesem Weg nicht allein!",
+      "line1": "Wir waren in Ihrer Situation. Es ist nicht einfach, aber Sie sind nicht allein!",
+      "line2": "Es ist uns eine Freude, Ihnen in allem zu helfen, was Sie brauchen.",
+      "line3": "Wir freuen uns, dass Sie mit uns online wachsen und gedeihen!"
+    },
+    "paragraph1": "Sind Sie bereit, dem 9-bis-5-Alltag zu entkommen und Ihr volles Potenzial im digitalen Raum zu entfalten? Wir glauben an ein Leben voller Freiheit, Flexibilität und Sinn.",
+    "paragraph2": "Ob Sie Expat, Selbstständiger oder Unternehmer sind – wir begleiten Sie auf jedem Schritt des Weges. Mit strategischem Coaching und bewährten digitalen Lösungen helfen wir Ihnen, Ihre Vision Wirklichkeit werden zu lassen und finanzielle Unabhängigkeit von überall auf der Welt zu erreichen.",
+    "contactButton": "Kontaktieren Sie uns",
+    "learnMoreButton": "Erfahren Sie mehr über unsere Mission",
     "flipIntro": "Wir bieten ",
     "flipOutro": "um Ihr Geschäft zu transformieren",
     "services": {
@@ -68,52 +126,38 @@
   "ourVision": {
     "vision": {
       "title": "Unsere Vision",
-      "description": "Unser Ziel ist es, ein globales Netzwerk von leistungsstarken Fachleuten aufzubauen, die durch strategisches Coaching und digitales Fachwissen finanzielle Unabhängigkeit und geschäftlichen Erfolg erreichen. Wir verbinden gerne, helfen, teilen Wissen, fördern Freundschaft und unterstützen einander.",
+      "description": "Wir bauen ein globales Netzwerk von Fachleuten auf, die durch Coaching und digitales Know-how finanzielle Unabhängigkeit erreichen. Wir verbinden, helfen, teilen Wissen und unterstützen einander.",
       "imageAlt": "Illustration unserer Vision"
     },
     "mission": {
       "title": "Unsere Mission",
-      "description": "Bei Backpack Wander GmbH ist es unsere Mission, Menschen dabei zu helfen, der 9-bis-5-Routine zu entkommen und ein Leben in Freiheit, Flexibilität und mit Sinn zu führen. Wir befähigen Einzelpersonen, digitale Unternehmen aufzubauen, remote zu arbeiten und ihr Leben nach eigenen Vorstellungen zu gestalten – von überall auf der Welt.",
+      "description": "Wir helfen Menschen, der 9-bis-5-Routine zu entkommen und ein freies, sinnvolles Leben zu führen. Wir befähigen Sie, digitale Unternehmen aufzubauen und von überall auf der Welt zu arbeiten.",
       "imageAlt": "Illustration unserer Mission"
     },
     "coaching": {
       "title": "Buchen Sie eine kostenlose Coaching-Sitzung",
-      "description": "Entfalten Sie Ihr Potenzial – Kostenlos. Erhalten Sie individuelle Unterstützung, um Ihre Vision zu klären, Herausforderungen zu überwinden und Ihren nächsten großen Schritt mit Zuversicht zu gehen. Diese unverbindliche Session ist ideal für Expats, Freelancer und angehende Unternehmer, die wachsen möchten.",
-      "imageAlt": "Illustration der kostenlosen Coaching-Sitzung"
+      "subtitle": "Entfalten Sie Ihr Potenzial – Kostenlos",
+      "description": "Erhalten Sie individuelle Unterstützung, um Ihre Vision zu klären, Herausforderungen zu überwinden und Ihren nächsten großen Schritt mit Zuversicht zu gehen. Diese unverbindliche Session ist ideal für Expats, Freelancer und angehende Unternehmer, die wachsen möchten.",
+      "imageAlt": "Illustration der kostenlosen Coaching-Sitzung",
+      "button": "Buchen Sie eine kostenlose Coaching-Sitzung"
     },
     "appointment": {
-      "title": "Termin vereinbaren",
-      "description": "Möchten Sie lieber eine persönliche Beratung, um herauszufinden, wie wir Sie in Ihrer beruflichen oder persönlichen Entwicklung unterstützen können? Vereinbaren Sie eine individuell auf Sie zugeschnittene Beratung zu einem für Sie passenden Zeitpunkt. In einem vertraulichen Gespräch nehmen wir uns Zeit, auf Ihre Anliegen einzugehen und gemeinsam erste Lösungsansätze zu entwickeln. Nutzen Sie die Chance, neue Perspektiven zu gewinnen und konkrete nächste Schritte zu planen.",
-      "imageAlt": "Illustration zur Terminvereinbarung"
-    }
-  },
-  "potential": {
-    "title": "Entfalte dein Potenzial mit",
-    "cards": {
-      "coaching": {
-        "category": "Business Coaching & Mentoring",
-        "title": "Praktische Unterstützung für dein digitales Projekt – von der Idee bis zum Einkommen.",
-        "description": "Verwandle deine Ideen in profitable digitale Unternehmungen. Unser Business-Coaching bietet maßgeschneiderte Anleitung, um die Komplexität des Online-Unternehmertums zu bewältigen.",
-        "button": "Coaching-Sitzung buchen"
-      },
-      "webDesign": {
-        "category": "Webdesign & Branding (über BW Digits)",
-        "title": "Maßgeschneiderte Websites und visuelles Erscheinungsbild – mehrsprachig & benutzerfreundlich.",
-        "description": "Websites, die Besucher fesseln und in treue Kunden verwandeln. Wir erstellen schöne, reaktionsfähige Websites, die deine Marke authentisch repräsentieren.",
-        "button": "Unser Portfolio ansehen"
-      },
-      "marketing": {
-        "category": "Digitale Marketingstrategie",
-        "title": "SEO, Social Media und E-Mail-Marketing: einfache, menschliche und effektive Strategien, die deine Marke wachsen lassen.",
-        "description": "Hebe dich in der digitalen Landschaft mit Strategien ab, die Ergebnisse liefern. Unser digitaler Marketingansatz kombiniert SEO-Optimierung, ansprechende Social-Media-Kampagnen und gezieltes E-Mail-Marketing.",
-        "button": "Marketing-Services erkunden"
-      },
-      "community": {
-        "category": "Community & Netzwerk",
-        "title": "Durch unsere WhatsApp-Gruppe und geplante Retreats und Workshops verbinden wir Menschen, die gemeinsam wachsen wollen.",
-        "description": "Tritt einem unterstützenden Netzwerk von gleichgesinnten Unternehmern und Visionären bei. Unsere Community bringt digitale Nomaden, Freelancer und Geschäftsinhaber zusammen, die Wissen teilen.",
-        "button": "Tritt unserer Community bei"
-      }
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Maßgeschneiderte Lösungen für Ihr Unternehmen",
+      "webdev": "Professionelle, responsive Websites, entwickelt mit modernen Technologien für eine perfekte Nutzererfahrung auf allen Geräten.",
+      "custom": "Individuelle Webanwendungen, die auf Ihre spezifischen Geschäftsanforderungen und Arbeitsabläufe zugeschnitten sind.",
+      "mobile": "Entwicklung von mobilen Apps für iOS und Android, um Ihre Kunden zu erreichen, wo immer sie sich befinden.",
+      "seo": "Suchmaschinenoptimierung zur Verbesserung Ihrer Sichtbarkeit und zur Steigerung des organischen Traffics auf Ihrer Website.",
+      "marketing": "Digitale Marketingstrategien zur Förderung Ihrer Marke und zur Verbindung mit Ihrer Zielgruppe.",
+      "imageAlt": "Illustration zur Webentwicklung",
+      "button": "Entdecken Sie unsere Dienstleistungen"
+    },
+    "community": {
+      "title": "Sonderangebot – Bis zum 31. Juli",
+      "subtitle": "Mehr für weniger!",
+      "description": "Maßgeschneiderte Website + Strategie + Support zu einem reduzierten Sommertarif. SEO-Analyse gratis. Social Media Marketing. Heiße Pakete—Alles, was Sie für Ihr Startup benötigen!",
+      "imageAlt": "Sonderangebot Illustration",
+      "button": "Kostenloses Beratungsgespräch buchen"
     }
   },
   "contact": {
@@ -128,16 +172,39 @@
     "weekend": "Wochenende",
     "sendUsMessage": "Senden Sie uns eine Nachricht",
     "fullName": "Vollständiger Name",
-    "subject": "Betreff",
+    "subject": "Thema des Interesses",
     "message": "Nachricht",
-    "send": "Nachricht senden",
+    "send": "Lass uns reden",
     "sending": "Senden...",
     "messageSent": "Ihre Nachricht wurde gesendet. Wir werden uns in Kürze bei Ihnen melden!",
+    "errorMessage": "Bei der Übermittlung Ihres Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     "nameRequired": "Name ist erforderlich",
     "emailRequired": "E-Mail ist erforderlich",
     "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-    "subjectRequired": "Betreff ist erforderlich",
+    "subjectRequired": "Thema des Interesses ist erforderlich",
     "messageRequired": "Nachricht ist erforderlich"
+  },
+  "modal": {
+    "title": "Buchen Sie einen kostenlosen Erstberatungstermin",
+    "description": "Vereinbaren Sie Ihr kostenloses 30-minütiges Erstgespräch, um zu besprechen, wie wir Ihnen bei der Erreichung Ihrer Ziele helfen können. Wir werden uns bei Ihnen melden, um einen Termin zu bestätigen, der für Sie passt.",
+    "fullName": "Vollständiger Name",
+    "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+    "email": "E-Mail",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "phone": "Telefon",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein (optional)",
+    "optional": "optional",
+    "message": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie kurz Ihre Ziele und worüber Sie im Erstgespräch sprechen möchten",
+    "book": "Buchen Sie Ihren kostenlosen Erstberatungstermin",
+    "sending": "Wird gesendet...",
+    "messageSent": "Ihre Anfrage wurde gesendet. Wir werden uns in Kürze mit Ihnen in Verbindung setzen, um Ihren kostenlosen Erstberatungstermin zu vereinbaren!",
+    "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "nameRequired": "Name ist erforderlich",
+    "emailRequired": "E-Mail ist erforderlich",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "messageRequired": "Nachricht ist erforderlich",
+    "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie zu und erklären sich damit einverstanden, bezüglich Ihrer Anfrage kontaktiert zu werden."
   },
   "footer": {
     "tagline": "Ihr Partner für neue Wege im digitalen Business, Coaching und Webdesign.",
@@ -163,29 +230,63 @@
     "title": "Entfalten Sie Ihr Potenzial Mit",
     "cards": {
       "coaching": {
-        "category": "Business Coaching & Mentoring",
-        "title": "Praktische Unterstützung für Ihr digitales Projekt – von der Idee bis zum Einkommen.",
-        "description": "Verwandeln Sie Ihre Ideen in profitable digitale Unternehmen. Unser Business-Coaching bietet maßgeschneiderte Anleitungen, um die Komplexität des Online-Unternehmertums zu bewältigen.",
+        "category": "Set Free Way",
+        "title": "Business Coaching & Mentoring—8-Wochen-Programm",
+        "description": "Verwandeln Sie Ihre Ideen in profitable digitale Unternehmen. Unser Business-Coaching bietet maßgeschneiderte Anleitungen, um die Komplexität des Online-Unternehmertums zu bewältigen. Sie können den besten Kurs für sich auswählen, gemeinsam mit einem Mentor während des Coachings.",
         "button": "Coaching-Sitzung buchen"
       },
       "webDesign": {
-        "category": "Webdesign & Branding (über BW Digits)",
-        "title": "Maßgeschneiderte Websites und visuelle Auftritte – mehrsprachig & benutzerfreundlich.",
-        "description": "Websites, die Besucher fesseln und zu treuen Kunden machen. Wir erstellen schöne, responsive Websites, die Ihre Marke authentisch repräsentieren.",
+        "category": "BW Digit",
+        "title": "Webdesign & Branding",
+        "description": "Maßgeschneiderte Websites und visuelle Auftritte – mehrsprachig & benutzerfreundlich. Websites, die Besucher fesseln und zu treuen Kunden machen. Wir erstellen schöne, responsive Websites, die Ihre Marke authentisch repräsentieren.",
         "button": "Unser Portfolio ansehen"
       },
       "marketing": {
         "category": "Digitale Marketingstrategie",
-        "title": "SEO, Social Media und E-Mail-Marketing: einfache, menschliche und effektive Strategien, die Ihre Marke wachsen lassen.",
-        "description": "Heben Sie sich in der digitalen Landschaft mit Strategien ab, die Ergebnisse liefern. Unser digitaler Marketing-Ansatz kombiniert SEO-Optimierung, ansprechende Social-Media-Kampagnen und gezieltes E-Mail-Marketing.",
+        "title": "SEO & Marketing",
+        "description": "Social Media, Content und Werbemarketing. Einfache, menschliche und effektive Strategien, die Ihre Marke wachsen lassen. Heben Sie sich mit bewährten Ergebnissen ab. Unser Ansatz zum digitalen Marketing kombiniert SEO-Optimierung, ansprechende Social-Media-Kampagnen und zielgerichtetes Marketing.",
         "button": "Marketing-Services erkunden"
       },
       "community": {
         "category": "Community & Netzwerk",
-        "title": "Durch unsere WhatsApp-Gruppe und geplante Retreats und Workshops verbinden wir Menschen, die gemeinsam wachsen wollen.",
-        "description": "Treten Sie einem unterstützenden Netzwerk gleichgesinnter Unternehmer und Visionäre bei. Unsere Community bringt digitale Nomaden, Freiberufler und Unternehmer zusammen, die Wissen teilen.",
+        "title": "WhatsApp-Gruppe, Meetups, Webinare und Workshops",
+        "description": "Wir verbinden Menschen, die gemeinsam wachsen wollen. Treten Sie einem unterstützenden Netzwerk gleichgesinnter Unternehmer und Visionäre bei. Unsere Community bringt digitale Nomaden, Freiberufler und Unternehmer zusammen, die Wissen teilen.",
         "button": "Unserer Community beitreten"
       }
     }
+  },
+  "contactForm": {
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "message": "Nachricht",
+    "optional": "Optional",
+    "submit": "Absenden",
+    "submitting": "Wird gesendet...",
+    "successMessage": "Vielen Dank für Ihre Nachricht!",
+    "willContactSoon": "Wir werden uns bald bei Ihnen melden.",
+    "errors": {
+      "nameRequired": "Name ist erforderlich",
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "phoneRequired": "Telefonnummer ist erforderlich",
+      "messageRequired": "Nachricht ist erforderlich",
+      "submitFailed": "Bei der Übermittlung des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+    }
+  },
+  "common": {
+    "close": "Schließen"
+  },
+  "discoveryCall": {
+    "title": "Buchen Sie ein kostenloses Beratungsgespräch",
+    "description": "Teilen Sie uns einige Informationen über sich mit und worüber Sie sprechen möchten. Wir melden uns bei Ihnen, um einen passenden Termin für Ihr kostenloses Beratungsgespräch zu vereinbaren.",
+    "messagePlaceholder": "Erläutern Sie kurz, was Sie im Beratungsgespräch besprechen möchten",
+    "submitButton": "Mein kostenloses Beratungsgespräch buchen",
+    "successTitle": "Erfolg!",
+    "successMessage": "Danke! Wir werden uns bald mit Ihnen in Verbindung setzen, um Ihr Beratungsgespräch zu planen.",
+    "dataSecurityNote": "Ihre Daten sind sicher und werden nur verwendet, um Sie bezüglich Ihres Beratungsgesprächs zu kontaktieren."
   }
 }
