@@ -45,9 +45,8 @@ const Navbar = () => {
   // Desktop nav link style with hover animation
   const navLinkStyle =
     "relative text-white text-sm transition-colors duration-300 hover:text-[#52a77f] after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#52a77f] after:left-0 after:bottom-[-5px] after:transition-all after:duration-300 hover:after:w-full";
-
   return (
-    <nav className='w-[98%] max-w-[1536px] mx-auto px-3 sm:px-6 py-[14px] h-[73px] bg-gradient-to-r from-black/60 via-[#EAF0F04D]/20 to-black/60 backdrop-blur-[20px] left-1/2 -translate-x-1/2 rounded-xl flex items-center justify-between font-rubik fixed top-[15px] z-50'>
+    <nav className='w-[98%] max-w-[1536px] mx-auto px-3 sm:px-6 py-[14px] h-[73px] bg-gradient-to-r from-black/80 via-[#EAF0F04D]/30 to-black/80 backdrop-blur-[20px] border border-[#52a77f]/10 shadow-[0_4px_12px_rgba(82,167,127,0.15)] sm:shadow-[0_4px_15px_rgba(82,167,127,0.2)] left-1/2 -translate-x-1/2 rounded-xl flex items-center justify-between font-rubik fixed top-[15px] z-50'>
       {/* Logo & Brand */}
       <div className='flex items-center gap-2'>
         <img src='/images/logo.png' alt='Logo' className='w-15 h-15' />

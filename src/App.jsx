@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 // import LocomotiveScroll from "locomotive-scroll";
 import 'locomotive-scroll/dist/locomotive-scroll.css';
@@ -10,6 +10,7 @@ import WeOffer from './components/WeOffer';
 import Visible from './components/Visible';
 import OurVision from './components/OurVision';
 import './i18n';
+import i18n from './i18n';
 import Potential from './components/Potential';
 import Footer from './components/common/Footer';
 import ContactUs from './components/ContactUs';
@@ -85,6 +86,17 @@ const AppContent = () => {
 };
 
 const App = () => {
+  // Force Serbian as default language when app mounts
+  useEffect(() => {
+    if (
+      !localStorage.getItem('i18nextLng') ||
+      localStorage.getItem('i18nextLng') !== 'sr'
+    ) {
+      localStorage.setItem('i18nextLng', 'sr');
+      i18n.changeLanguage('sr');
+    }
+  }, []);
+
   return (
     <LanguageProvider>
       <AppContent />

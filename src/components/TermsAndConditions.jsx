@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import SidebarContact from './ui/SidebarContact';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -8,6 +8,14 @@ const TermsAndConditions = () => {
   const { currentLang, getLocalizedUrl } = useLanguage();
   const [activeSection, setActiveSection] = useState('generalTerms');
   const [isSidebarContactOpen, setIsSidebarContactOpen] = useState(false);
+
+  // Refs for sections
+  const sectionRefs = {
+    generalTerms: useRef(null),
+    services: useRef(null),
+    userObligations: useRef(null),
+    liability: useRef(null),
+  };
 
   // Create alternate language URLs for SEO
   const currentUrl = window.location.origin + getLocalizedUrl(currentLang);
@@ -22,6 +30,44 @@ const TermsAndConditions = () => {
       setActiveSection(sectionId);
     }
   };
+
+  // Setup Intersection Observer for scroll spy
+  useEffect(() => {
+    const observerOptions = {
+      root: null, // Use viewport as root
+      rootMargin: '-10% 0px -70% 0px', // Consider element in view when it's 10% from the top and not yet 70% through the bottom
+      threshold: 0.1, // Fire when at least 10% of the element is in view
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    // Observe all section refs
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      // Clean up observer when component unmounts
+      Object.values(sectionRefs).forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, []);
 
   const toggleSidebarContact = () => {
     setIsSidebarContactOpen(!isSidebarContactOpen);
@@ -137,7 +183,11 @@ const TermsAndConditions = () => {
                 </div>
               </div>{' '}
               <div className='bg-black-light rounded-lg shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-800'>
-                <section id='generalTerms' className='mb-12 scroll-mt-24'>
+                <section
+                  id='generalTerms'
+                  className='mb-12 scroll-mt-24'
+                  ref={sectionRefs.generalTerms}
+                >
                   <h2 className='text-2xl sm:text-3xl font-semibold text-white mb-6'>
                     {t('termsAndConditions.sections.generalTerms.title')}
                   </h2>
@@ -158,7 +208,11 @@ const TermsAndConditions = () => {
                       ))}
                   </div>
                 </section>{' '}
-                <section id='services' className='mb-12 scroll-mt-24'>
+                <section
+                  id='services'
+                  className='mb-12 scroll-mt-24'
+                  ref={sectionRefs.services}
+                >
                   <h2 className='text-2xl sm:text-3xl font-semibold text-white mb-6'>
                     {t('termsAndConditions.sections.services.title')}
                   </h2>
@@ -179,7 +233,11 @@ const TermsAndConditions = () => {
                       ))}
                   </div>
                 </section>{' '}
-                <section id='userObligations' className='mb-12 scroll-mt-24'>
+                <section
+                  id='userObligations'
+                  className='mb-12 scroll-mt-24'
+                  ref={sectionRefs.userObligations}
+                >
                   <h2 className='text-2xl sm:text-3xl font-semibold text-white mb-6'>
                     {t('termsAndConditions.sections.userObligations.title')}
                   </h2>
@@ -203,6 +261,7 @@ const TermsAndConditions = () => {
                 <section
                   id='liability'
                   className='mb-12 scroll-mt-24 last:mb-0'
+                  ref={sectionRefs.liability}
                 >
                   <h2 className='text-2xl sm:text-3xl font-semibold text-white mb-6'>
                     {t('termsAndConditions.sections.liability.title')}

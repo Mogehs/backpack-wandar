@@ -11,6 +11,17 @@ export const LanguageProvider = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Force Serbian on initial mount
+  useEffect(() => {
+    if (
+      !localStorage.getItem('i18nextLng') ||
+      localStorage.getItem('i18nextLng') !== 'sr'
+    ) {
+      localStorage.setItem('i18nextLng', 'sr');
+      i18n.changeLanguage('sr');
+    }
+  }, [i18n]);
+
   // Extract language from URL path if present
   useEffect(() => {
     const path = location.pathname;
@@ -29,6 +40,7 @@ export const LanguageProvider = ({ children }) => {
   // Change URL when language changes
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    localStorage.setItem('i18nextLng', lang);
 
     const path = location.pathname;
     const segments = path.split('/').filter(Boolean);
