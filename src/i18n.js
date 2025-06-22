@@ -1,12 +1,12 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import Backend from "i18next-http-backend";
-import LanguageDetector from "i18next-browser-languagedetector";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import Backend from 'i18next-http-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import translation files
-import translationEN from "./locales/en/translation.json";
-import translationDE from "./locales/de/translation.json";
-import translationSR from "./locales/sr/translation.json";
+import translationEN from './locales/en/translation.json';
+import translationDE from './locales/de/translation.json';
+import translationSR from './locales/sr/translation.json';
 
 // Resources object with translations
 const resources = {
@@ -28,9 +28,10 @@ i18n
   .use(LanguageDetector)
   // Pass the i18n instance to react-i18next
   .use(initReactI18next)
-  // Initialize i18next  .init({
+  // Initialize i18next
+  .init({
     resources,
-    fallbackLng: "sr", // Default language
+    fallbackLng: 'sr', // Default language
     debug: false, // Set debug manually
 
     interpolation: {
