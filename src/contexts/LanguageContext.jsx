@@ -15,14 +15,12 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     const path = location.pathname;
     const segments = path.split('/').filter(Boolean);
-    const currentLang = i18n.language;
-
-    // Check if first segment is a language code
+    const currentLang = i18n.language; // Check if first segment is a language code
     if (segments.length > 0 && ['en', 'de', 'sr'].includes(segments[0])) {
       if (segments[0] !== currentLang) {
         i18n.changeLanguage(segments[0]);
       }
-    } else if (currentLang !== 'en') {
+    } else if (currentLang !== 'sr') {
       // No language in URL but user has a non-default language set
       // Here we don't redirect, we just maintain their language preference
     }
@@ -34,13 +32,12 @@ export const LanguageProvider = ({ children }) => {
 
     const path = location.pathname;
     const segments = path.split('/').filter(Boolean);
-
     if (segments.length > 0 && ['en', 'de', 'sr'].includes(segments[0])) {
       // URL already has language prefix, update it
       const newPath = '/' + lang + path.substring(3);
       navigate(newPath);
-    } else if (lang !== 'en') {
-      // English is default, only add prefix for other languages
+    } else if (lang !== 'sr') {
+      // Serbian is default, only add prefix for other languages
       navigate(`/${lang}${path}`);
     }
   };
@@ -49,19 +46,18 @@ export const LanguageProvider = ({ children }) => {
   const getLocalizedUrl = (lang) => {
     const path = location.pathname;
     const segments = path.split('/').filter(Boolean);
-
     if (segments.length > 0 && ['en', 'de', 'sr'].includes(segments[0])) {
-      if (lang === 'en') {
-        // For English, remove language prefix
+      if (lang === 'sr') {
+        // For Serbian, remove language prefix
         return '/' + segments.slice(1).join('/');
       }
       // Replace language prefix
       return '/' + lang + '/' + segments.slice(1).join('/');
-    } else if (lang === 'en') {
-      // Current URL has no prefix and requested is English
+    } else if (lang === 'sr') {
+      // Current URL has no prefix and requested is Serbian
       return path;
     } else {
-      // Current URL has no prefix and requested is not English
+      // Current URL has no prefix and requested is not Serbian
       return '/' + lang + path;
     }
   };

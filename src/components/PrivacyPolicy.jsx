@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SidebarContact from './ui/SidebarContact';
-import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const PrivacyPolicy = () => {
@@ -29,17 +28,6 @@ const PrivacyPolicy = () => {
   };
   return (
     <>
-      <Helmet>
-        <html lang={currentLang} />
-        <title>{t('seo.privacy.title')} | Backpack Wander</title>
-        <meta name='description' content={t('seo.privacy.description')} />
-        <meta name='keywords' content={t('seo.privacy.keywords')} />
-        <link rel='canonical' href={currentUrl} />
-        <link rel='alternate' hreflang='en' href={enUrl} />
-        <link rel='alternate' hreflang='de' href={deUrl} />
-        <link rel='alternate' hreflang='sr' href={srUrl} />
-        <link rel='alternate' hreflang='x-default' href={enUrl} />
-      </Helmet>
       <div className='bg-black min-h-screen animate-fadeIn'>
         <div className='bg-black-light py-32 md:py-36 lg:py-40 px-4 sm:px-6 lg:px-8 text-center rounded-b-2xl shadow-xl mb-4 md:mb-12 border-b border-green'>
           <h1 className='text-4xl sm:text-5xl font-bold mb-4 text-white'>

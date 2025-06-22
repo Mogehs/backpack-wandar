@@ -28,7 +28,7 @@ const Footer = () => {
       formData.append('_captcha', 'false');
 
       try {
-        await fetch('https://formsubmit.co/ajax/info@backpackwander.srm', {
+        await fetch('https://formsubmit.co/ajax/info@backpackwander.sr', {
           method: 'POST',
           body: formData,
           headers: {

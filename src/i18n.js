@@ -28,10 +28,9 @@ i18n
   .use(LanguageDetector)
   // Pass the i18n instance to react-i18next
   .use(initReactI18next)
-  // Initialize i18next
-  .init({
+  // Initialize i18next  .init({
     resources,
-    fallbackLng: "en", // Default language
+    fallbackLng: "sr", // Default language
     debug: false, // Set debug manually
 
     interpolation: {
