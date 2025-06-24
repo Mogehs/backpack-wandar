@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 export default function BeginSection() {
   const { t } = useTranslation();
@@ -35,10 +36,10 @@ export default function BeginSection() {
       <div className='text-center mb-20 px-4'>
         <h2 className='text-3xl md:text-4xl font-semibold text-green mb-4'>
           {t('whatWeDo.beginSection.title')}
-        </h2>
-        <p className='text-gray-300 max-w-2xl mx-auto'>
-          {t('whatWeDo.beginSection.subtitle')}
-        </p>
+        </h2>{' '}
+        <div className='text-gray-300 max-w-2xl mx-auto'>
+          <TextWithLineBreaks text={t('whatWeDo.beginSection.subtitle')} />
+        </div>
       </div>
 
       <div className='h-20'></div>
@@ -70,10 +71,12 @@ export default function BeginSection() {
                   <span
                     className={`absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-1/4 h-[3px] ${card.underline}`}
                   ></span>
-                </h3>
-                <p className='text-sm text-gray-200 mt-5'>
-                  {t(`whatWeDo.beginSection.${card.key}.description`)}
-                </p>
+                </h3>{' '}
+                <div className='text-sm text-gray-200 mt-5'>
+                  <TextWithLineBreaks
+                    text={t(`whatWeDo.beginSection.${card.key}.description`)}
+                  />
+                </div>
               </div>
             </div>{' '}
             {/* Button with URL Link */}

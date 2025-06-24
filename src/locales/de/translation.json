@@ -241,7 +241,8 @@
     "rights": "Alle Rechte vorbehalten.",
     "privacy": "Datenschutz",
     "terms": "AGB",
-    "imprint": "Impressum"
+    "imprint": "Impressum",
+    "madeBy": "Erstellt von"
   },
   "potential": {
     "title": "Entfalten Sie Ihr Potenzial Mit",
@@ -323,7 +324,7 @@
       },
       "responsibleEntity": {
         "title": "Verantwortliche Stelle",
-        "content": "Verantwortliche Stelle:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nDeutschland\nE-Mail: info@backpackwander.sr"
+        "content": "Verantwortliche Stelle:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nDeutschland\nE-Mail: info@backpackwander.rs"
       },
       "useOfData": {
         "title": "Verwendung von Daten",

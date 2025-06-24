@@ -47,7 +47,7 @@ const SidebarContact = ({ isOpen, onClose }) => {
 
     const formData = new FormData(e.target);
 
-    fetch('https://formsubmit.co/ajax/info@backpackwander.sr', {
+    fetch('https://formsubmit.co/ajax/info@backpackwander.rs', {
       method: 'POST',
       body: formData,
       headers: {

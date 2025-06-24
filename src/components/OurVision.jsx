@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { CalendarRange, Sparkles } from 'lucide-react';
 import SidebarModal from './ui/SidebarModal';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 const OurVision = () => {
   const { t } = useTranslation();
@@ -44,13 +45,15 @@ const OurVision = () => {
             <div className='bg-neutral-900 p-6 md:p-10 rounded-2xl w-full md:w-1/2 flex flex-col justify-between'>
               <h3 className='text-2xl md:text-4xl font-bold text-white mb-3'>
                 {t('ourVision.coaching.title')}
-              </h3>
-              <p className='text-[#52a77f] mb-4 text-xl md:text-2xl'>
-                {t('ourVision.coaching.subtitle')}
-              </p>
-              <p className='text-neutral-300 mb-6 text-lg md:text-2xl mt-5'>
-                {t('ourVision.coaching.description')}
-              </p>
+              </h3>{' '}
+              <div className='text-[#52a77f] mb-4 text-xl md:text-2xl'>
+                <TextWithLineBreaks text={t('ourVision.coaching.subtitle')} />
+              </div>
+              <div className='text-neutral-300 mb-6 text-lg md:text-2xl mt-5'>
+                <TextWithLineBreaks
+                  text={t('ourVision.coaching.description')}
+                />
+              </div>
               <a
                 href='http://setfreeway.com'
                 target='_blank'
@@ -84,16 +87,20 @@ const OurVision = () => {
             <div className='bg-gradient-to-br from-neutral-900 to-black p-6 md:p-10 rounded-2xl w-full md:w-1/2 flex flex-col justify-between border border-red/10'>
               <h3 className='text-2xl md:text-5xl font-bold text-white'>
                 {t('ourVision.appointment.title')}
-              </h3>
-              <p className='text-[#52a77f] mb-4 text-lg mt-5 md:text-2xl'>
-                {t('ourVision.appointment.subtitle')}
-              </p>{' '}
+              </h3>{' '}
+              <div className='text-[#52a77f] mb-4 text-lg mt-5 md:text-2xl'>
+                <TextWithLineBreaks
+                  text={t('ourVision.appointment.subtitle')}
+                />
+              </div>{' '}
               <div className='text-neutral-300 mb-6 text-base md:text-xl space-y-4'>
-                <p>{t('ourVision.appointment.webdev')}</p>
-                <p>{t('ourVision.appointment.custom')}</p>
-                <p>{t('ourVision.appointment.mobile')}</p>
-                <p>{t('ourVision.appointment.seo')}</p>
-                <p>{t('ourVision.appointment.marketing')}</p>
+                <TextWithLineBreaks text={t('ourVision.appointment.webdev')} />
+                <TextWithLineBreaks text={t('ourVision.appointment.custom')} />
+                <TextWithLineBreaks text={t('ourVision.appointment.mobile')} />
+                <TextWithLineBreaks text={t('ourVision.appointment.seo')} />
+                <TextWithLineBreaks
+                  text={t('ourVision.appointment.marketing')}
+                />
               </div>
               <a
                 href='http://bwdigit.de'
@@ -144,10 +151,12 @@ const OurVision = () => {
               <div className='space-y-4'>
                 <h3 className='text-2xl md:text-4xl font-bold text-white mb-3'>
                   {t('ourVision.community.title')}
-                </h3>
-                <p className='text-red font-medium mb-4 text-lg md:text-2xl'>
-                  {t('ourVision.community.subtitle')}
-                </p>
+                </h3>{' '}
+                <div className='text-red font-medium mb-4 text-lg md:text-2xl'>
+                  <TextWithLineBreaks
+                    text={t('ourVision.community.subtitle')}
+                  />
+                </div>
                 <div className='flex flex-col gap-3 text-neutral-300 mb-6 text-base md:text-lg'>
                   {t('ourVision.community.description')
                     .split('. ')
@@ -168,7 +177,9 @@ const OurVision = () => {
                             <polyline points='20 6 9 17 4 12'></polyline>
                           </svg>
                         </div>
-                        <p>{item.replace(/\.$/, '')}</p>
+                        <div>
+                          <TextWithLineBreaks text={item.replace(/\.$/, '')} />
+                        </div>
                       </div>
                     ))}
                 </div>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import SidebarModal from './ui/SidebarModal';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 export default function WhatWeDo() {
   const { t } = useTranslation();
@@ -37,13 +38,15 @@ export default function WhatWeDo() {
       >
         <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-green mb-3'>
           {t('whatWeDo.title', 'What We Do')}
-        </h2>
-        <p className='text-lg mb-12 text-neutral-300'>
-          {t(
-            'whatWeDo.subtitle',
-            'Empowering your personal and digital journey.'
-          )}
-        </p>
+        </h2>{' '}
+        <div className='text-lg mb-12 text-neutral-300'>
+          <TextWithLineBreaks
+            text={t(
+              'whatWeDo.subtitle',
+              'Empowering your personal and digital journey.'
+            )}
+          />
+        </div>
         <motion.div
           variants={staggerContainer}
           initial='hidden'
@@ -61,13 +64,15 @@ export default function WhatWeDo() {
             </div>
             <h3 className='text-xl font-bold mb-3'>
               {t('whatWeDo.card1.title', 'Break Free & Redesign Life')}
-            </h3>
-            <p className='text-neutral-400 flex-grow'>
-              {t(
-                'whatWeDo.card1.description',
-                'We help you escape the 9-to-5 and build a flexible, fulfilling life in the digital space — one aligned with your personal values and passions.'
-              )}
-            </p>
+            </h3>{' '}
+            <div className='text-neutral-400 flex-grow'>
+              <TextWithLineBreaks
+                text={t(
+                  'whatWeDo.card1.description',
+                  'We help you escape the 9-to-5 and build a flexible, fulfilling life in the digital space — one aligned with your personal values and passions.'
+                )}
+              />
+            </div>
           </motion.div>
 
           {/* Card 2 */}
@@ -80,13 +85,15 @@ export default function WhatWeDo() {
             </div>
             <h3 className='text-xl font-bold mb-3'>
               {t('whatWeDo.card2.title', 'Coaching Meets Creativity')}
-            </h3>
-            <p className='text-neutral-400 flex-grow'>
-              {t(
-                'whatWeDo.card2.description',
-                'Through a holistic blend of coaching, creative direction, and digital tools, we empower you, your team, or your business to turn ideas into reality.'
-              )}
-            </p>
+            </h3>{' '}
+            <div className='text-neutral-400 flex-grow'>
+              <TextWithLineBreaks
+                text={t(
+                  'whatWeDo.card2.description',
+                  'Through a holistic blend of coaching, creative direction, and digital tools, we empower you, your team, or your business to turn ideas into reality.'
+                )}
+              />
+            </div>
           </motion.div>
 
           {/* Card 3 */}
@@ -99,19 +106,26 @@ export default function WhatWeDo() {
             </div>
             <h3 className='text-xl font-bold mb-3'>
               {t('whatWeDo.card3.title', 'Build A Life that Fits You')}
-            </h3>
-            <p className='text-neutral-400 flex-grow'>
-              {t(
-                'whatWeDo.card3.description',
-                "Whether you're launching an online business, shaping your brand, or crafting your digital presence — we walk with you, helping you work remotely and design a life that truly fits."
-              )}
-            </p>
+            </h3>{' '}
+            <div className='text-neutral-400 flex-grow'>
+              <TextWithLineBreaks
+                text={t(
+                  'whatWeDo.card3.description',
+                  "Whether you're launching an online business, shaping your brand, or crafting your digital presence — we walk with you, helping you work remotely and design a life that truly fits."
+                )}
+              />
+            </div>
           </motion.div>
-        </motion.div>
+        </motion.div>{' '}
         <div className='text-center mt-16'>
-          <p className='text-neutral-300 mb-5'>
-            {t('whatWeDo.cta.question', 'Ready to discover your next step?')}
-          </p>{' '}
+          <div className='text-neutral-300 mb-5'>
+            <TextWithLineBreaks
+              text={t(
+                'whatWeDo.cta.question',
+                'Ready to discover your next step?'
+              )}
+            />
+          </div>{' '}
           <motion.button
             onClick={() => setIsModalOpen(true)}
             whileHover={{ scale: 1.05 }}

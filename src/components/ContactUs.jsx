@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { MapPin, Phone, Mail, Clock, CheckCircle, XCircle } from 'lucide-react';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 const ContactUs = () => {
   const { t } = useTranslation();
@@ -71,7 +72,7 @@ const ContactUs = () => {
     // Disable captcha for better user experience
     formDataToSend.append('_captcha', 'false');
 
-    fetch('https://formsubmit.co/ajax/info@backpackwander.sr', {
+    fetch('https://formsubmit.co/ajax/info@backpackwander.rs', {
       method: 'POST',
       body: formDataToSend,
       headers: {
@@ -187,7 +188,7 @@ const ContactUs = () => {
                     ) : key === 'phone' ? (
                       <p className='text-sm'>+49 172 8137 111</p>
                     ) : key === 'email' ? (
-                      <p className='text-sm'>info@backpackwander.sr</p>
+                      <p className='text-sm'>info@backpackwander.rs</p>
                     ) : (
                       <>
                         <p className='text-sm'>

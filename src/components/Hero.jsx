@@ -2,6 +2,7 @@ import React from 'react';
 import { SparklesCore } from './ui/Sparkel';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -98,16 +99,15 @@ const Hero = () => {
             >
               {t('hero.buttons.digitalStrategy')}
             </motion.button>
-          </motion.div>
-          <motion.p
+          </motion.div>{' '}
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.8 }}
             className='text-base xs:text-lg sm:text-xl mt-2 text-center w-full sm:w-[80%]'
           >
-            {t('hero.description')}
-          </motion.p>
-
+            <TextWithLineBreaks text={t('hero.description')} />
+          </motion.div>
           <div className='w-full mt-8 sm:mt-16 px-4 sm:px-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10'>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -28,7 +28,7 @@ const Footer = () => {
       formData.append('_captcha', 'false');
 
       try {
-        await fetch('https://formsubmit.co/ajax/info@backpackwander.sr', {
+        await fetch('https://formsubmit.co/ajax/info@backpackwander.rs', {
           method: 'POST',
           body: formData,
           headers: {
@@ -154,7 +154,7 @@ const Footer = () => {
               </div>
               <div className='flex items-center space-x-3'>
                 <Mail size={20} className='text-green' />
-                <span className='text-gray-300'>info@backpackwander.sr</span>
+                <span className='text-gray-300'>info@backpackwander.rs</span>
               </div>
             </div>
           </div>
@@ -198,6 +198,18 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <p className='text-gray-400 text-sm'>
             © {currentYear} Backpack Wander GmbH. {t('footer.rights')}
+          </p>{' '}
+          {/* Made by BW Digit */}
+          <p className='text-gray-400 text-sm my-2 md:my-0'>
+            <span className='text-gray-400'>{t('footer.madeBy')} </span>
+            <a
+              href='http://bwdigit.de'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-green hover:text-green-400 transition-colors'
+            >
+              BW Digit
+            </a>
           </p>
           <div className='mt-4 md:mt-0 flex space-x-4 text-sm text-gray-400'>
             <Link

@@ -108,7 +108,7 @@ const SidebarModal = ({
     // Disable captcha for better user experience
     formDataToSend.append('_captcha', 'false');
 
-    fetch('https://formsubmit.co/ajax/info@backpackwander.sr', {
+    fetch('https://formsubmit.co/ajax/info@backpackwander.rs', {
       method: 'POST',
       body: formDataToSend,
       headers: {

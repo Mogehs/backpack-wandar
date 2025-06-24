@@ -241,7 +241,8 @@
     "rights": "Sva prava zadržana.",
     "privacy": "Politika privatnosti",
     "terms": "Uslovi korišćenja",
-    "imprint": "Impresum"
+    "imprint": "Impresum",
+    "madeBy": "Napravio"
   },
   "potential": {
     "title": "Oslobodite svoj potencijal uz",
@@ -323,7 +324,7 @@
       },
       "responsibleEntity": {
         "title": "Odgovorno lice",
-        "content": "Odgovorno lice:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nNemačka\nEmail: info@backpackwander.sr"
+        "content": "Odgovorno lice:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nNemačka\nEmail: info@backpackwander.rs"
       },
       "useOfData": {
         "title": "Upotreba podataka",

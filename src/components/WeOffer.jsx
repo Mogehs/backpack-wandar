@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { GlowingEffect } from '../components/ui/GlowingEffect';
 import { useTranslation } from 'react-i18next';
 import SidebarModal from './ui/SidebarModal';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 export default function GlowingEffectDemo() {
   const { t } = useTranslation();
@@ -99,9 +100,9 @@ const GridItem = ({
                 <h3 className='-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-black md:text-2xl/[1.875rem] dark:text-white'>
                   {title}
                 </h3>
-                <h2 className='font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-300 [&_b]:md:font-semibold [&_strong]:md:font-semibold'>
-                  {description}
-                </h2>
+                <div className='font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-300 [&_b]:md:font-semibold [&_strong]:md:font-semibold'>
+                  <TextWithLineBreaks text={description} />
+                </div>
               </div>
               {button && (
                 <a
@@ -143,9 +144,9 @@ const GridItem = ({
               <h3 className='-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-black md:text-2xl/[1.875rem] dark:text-white'>
                 {title}
               </h3>
-              <h2 className='font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-300 [&_b]:md:font-semibold [&_strong]:md:font-semibold'>
-                {description}
-              </h2>
+              <div className='font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-300 [&_b]:md:font-semibold [&_strong]:md:font-semibold'>
+                <TextWithLineBreaks text={description} />
+              </div>
             </div>
           </div>
           {button && (

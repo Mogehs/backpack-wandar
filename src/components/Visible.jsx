@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import TextWithLineBreaks from './ui/TextWithLineBreaks';
 
 export default function Visible() {
   const { t } = useTranslation();
@@ -25,31 +26,52 @@ export default function Visible() {
             {/* Left side - Vision and Mission */}
             <div className='w-full md:w-[60%] flex flex-col gap-8'>
               {' '}
-              {/* Vision */}
+              {/* Vision */}{' '}
               <div>
                 <h2 className='text-3xl md:text-5xl font-bold mb-4'>
                   {t('ourVision.vision.title')}
                 </h2>
-                <p className='text-lg md:text-xl text-neutral-300'>
-                  {t('visible.customVision')}
-                </p>
-              </div>
+                <TextWithLineBreaks
+                  text={t('visible.customVision')}
+                  className='text-lg md:text-xl text-neutral-300'
+                />
+              </div>{' '}
               {/* Support message */}
-              <div className='bg-neutral-900 p-6 rounded-lg my-4 text-lg'>
-                <p className='text-white mb-2'>{t('visible.support.line1')}</p>
-                <p className='text-white mb-2'>{t('visible.support.line2')}</p>
-                <p className='text-white'>{t('visible.support.line3')}</p>
+              <div
+                className='p-6 rounded-lg my-4 text-lg'
+                style={{
+                  background:
+                    'radial-gradient(circle, #368f67 0%, #000000 100%)',
+                }}
+              >
+                {' '}
+                <TextWithLineBreaks
+                  text={t('visible.support.line1')}
+                  className='text-white mb-2'
+                />
+                <TextWithLineBreaks
+                  text={t('visible.support.line2')}
+                  className='text-white mb-2'
+                />
+                <TextWithLineBreaks
+                  text={t('visible.support.line3')}
+                  className='text-white'
+                />
               </div>
-              {/* Mission */}
+              {/* Mission */}{' '}
               <div>
                 <h2 className='text-3xl md:text-5xl font-bold mb-4'>
                   {t('ourVision.mission.title')}
                 </h2>
-                <p className='text-lg md:text-xl text-neutral-300'>
-                  {t('visible.customMission')}
-                </p>
+                <TextWithLineBreaks
+                  text={t('visible.customMission')}
+                  className='text-lg md:text-xl text-neutral-300'
+                />
               </div>{' '}
-              <button className='bg-green hover:bg-opacity-80 text-white py-2 px-6 mt-4 rounded-md inline-block w-fit text-center transition-all'>
+              <button
+                className='bg-green hover:bg-[#2a7a54] text-white py-2 px-6 mt-4 rounded-md inline-block w-fit text-center transition-all duration-300 cursor-pointer'
+                onClick={handleContactClick}
+              >
                 {t('visible.learnMoreButton')}
               </button>
             </div>
@@ -68,26 +90,26 @@ export default function Visible() {
 
       {/* Main green section with radial gradient */}
       <div
-        className='py-16 px-4 md:px-6 lg:px-8 text-white text-center my-20'
+        className='py-16 px-4 md:px-6 lg:px-8 text-white text-left my-20'
         style={{
           background: 'radial-gradient(circle, #368f67 0%, #000000 100%)',
         }}
       >
         <div className='max-w-5xl mx-auto'>
+          {' '}
           <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-8'>
             {t('visible.title')}
           </h1>
-
-          <p className='text-lg md:text-xl lg:text-2xl mb-8 opacity-90'>
-            {t('visible.paragraph1')}
-          </p>
-
-          <p className='text-lg md:text-xl lg:text-2xl mb-12 opacity-90'>
-            {t('visible.paragraph2')}
-          </p>
-
+          <TextWithLineBreaks
+            text={t('visible.paragraph1')}
+            className='text-lg md:text-xl lg:text-2xl mb-8 opacity-90'
+          />
+          <TextWithLineBreaks
+            text={t('visible.paragraph2')}
+            className='text-lg md:text-xl lg:text-2xl mb-12 opacity-90'
+          />{' '}
           <button
-            className='bg-[#c24640] hover:bg-opacity-80 text-white py-4 px-12  rounded-md inline-block text-center transition-all text-xl font-medium'
+            className='bg-[#c24640] hover:bg-[#a63c36] text-white py-4 px-12 rounded-md inline-block text-center transition-all duration-300 text-xl font-medium cursor-pointer'
             onClick={handleContactClick}
           >
             {t('visible.contactButton')}

@@ -242,7 +242,8 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
-    "imprint": "Imprint"
+    "imprint": "Imprint",
+    "madeBy": "Made by"
   },
   "potential": {
     "title": "Unlock Your Potential With",
@@ -325,7 +326,7 @@
       },
       "responsibleEntity": {
         "title": "Responsible Entity",
-        "content": "Responsible body:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nGermany\nEmail: info@backpackwander.sr"
+        "content": "Responsible body:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nGermany\nEmail: info@backpackwander.rs"
       },
       "useOfData": {
         "title": "Use of Data",
