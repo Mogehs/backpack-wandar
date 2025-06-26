@@ -28,7 +28,7 @@ const Footer = () => {
       formData.append('_captcha', 'false');
 
       try {
-        await fetch('https://formsubmit.co/ajax/info@backpackwander.rs', {
+        await fetch('https://formsubmit.co/ajax/info@backpackwander.com', {
           method: 'POST',
           body: formData,
           headers: {
@@ -154,7 +154,7 @@ const Footer = () => {
               </div>
               <div className='flex items-center space-x-3'>
                 <Mail size={20} className='text-green' />
-                <span className='text-gray-300'>info@backpackwander.rs</span>
+                <span className='text-gray-300'>info@backpackwander.com</span>
               </div>
             </div>
           </div>

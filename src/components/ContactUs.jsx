@@ -72,7 +72,7 @@ const ContactUs = () => {
     // Disable captcha for better user experience
     formDataToSend.append('_captcha', 'false');
 
-    fetch('https://formsubmit.co/ajax/info@backpackwander.rs', {
+    fetch('https://formsubmit.co/ajax/info@backpackwander.com', {
       method: 'POST',
       body: formDataToSend,
       headers: {
@@ -188,7 +188,7 @@ const ContactUs = () => {
                     ) : key === 'phone' ? (
                       <p className='text-sm'>+49 172 8137 111</p>
                     ) : key === 'email' ? (
-                      <p className='text-sm'>info@backpackwander.rs</p>
+                      <p className='text-sm'>info@backpackwander.com</p>
                     ) : (
                       <>
                         <p className='text-sm'>

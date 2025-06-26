@@ -24,15 +24,15 @@ const resources = {
 i18n
   // Use backend plugin for loading translations
   .use(Backend)
-  // Detect user language - disabled to enforce Serbian as default
+  // Detect user language - disabled to enforce English as default
   // .use(LanguageDetector)
   // Pass the i18n instance to react-i18next
   .use(initReactI18next)
   // Initialize i18next
   .init({
     resources,
-    lng: 'sr', // Force Serbian as the initial language
-    fallbackLng: 'sr', // Default fallback language
+    lng: 'en', // Force English as the initial language
+    fallbackLng: 'en', // Default fallback language
     debug: false, // Set debug manually
 
     interpolation: {
