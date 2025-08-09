@@ -6,8 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:sr": "cross-env VITE_DEFAULT_LANG=sr vite build",
+    "build:de": "cross-env VITE_DEFAULT_LANG=de vite build",
+    "build:en": "cross-env VITE_DEFAULT_LANG=en vite build",
+    "build:all": "npm run build:sr && npm run build:de && npm run build:en",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:sr": "vite preview --outDir dist-sr",
+    "preview:de": "vite preview --outDir dist-de",
+    "preview:en": "vite preview --outDir dist-en"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.34.0",
@@ -38,6 +45,7 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "cross-env": "^10.0.0",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
