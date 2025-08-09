@@ -4,7 +4,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -25,6 +25,23 @@ const Navbar = () => {
       // If on different page, navigate to home with hash
       navigate('/' + targetId);
     }
+  };
+
+  // Handle digital services navigation based on current language
+  const handleDigitalServicesClick = () => {
+    const currentLang = i18n.language;
+    let url = 'http://bwdigit.de'; // default to German
+
+    if (currentLang === 'en') {
+      url = 'http://bwdigit.com';
+    } else if (currentLang === 'sr') {
+      url = 'http://bwdigit.rs';
+    } else if (currentLang === 'de') {
+      url = 'http://bwdigit.de';
+    }
+
+    window.open(url, '_blank');
+    setIsOpen(false);
   };
 
   // Handle hash navigation after route change
@@ -57,14 +74,9 @@ const Navbar = () => {
         <Link to='/' onClick={() => setIsOpen(false)} className={navLinkStyle}>
           {t('navbar.home')}
         </Link>
-        <a
-          href='http://bwdigit.de'
-          target='_blank'
-          onClick={() => setIsOpen(false)}
-          className={navLinkStyle}
-        >
+        <button onClick={handleDigitalServicesClick} className={navLinkStyle}>
           {t('navbar.services')}
-        </a>
+        </button>
         <a
           href='http://setfreeway.com'
           target='_blank'
@@ -137,14 +149,12 @@ const Navbar = () => {
           >
             {t('navbar.home')}
           </Link>
-          <a
-            href='http://bwdigit.de'
-            target='_blank'
-            className='text-white text-sm hover:text-black transition-colors duration-300'
-            onClick={() => setIsOpen(false)}
+          <button
+            onClick={handleDigitalServicesClick}
+            className='text-white text-sm hover:text-black transition-colors duration-300 text-left'
           >
             {t('navbar.services')}
-          </a>
+          </button>
           <a
             href='http://setfreeway.com'
             target='_blank'
