@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 // import LocomotiveScroll from "locomotive-scroll";
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-import Hero from './components/Hero';
-import Navbar from './components/common/Navbar';
-import WhatWeDo from './components/WhatWeDo';
-import WeOffer from './components/WeOffer';
+import "locomotive-scroll/dist/locomotive-scroll.css";
+import Hero from "./components/Hero";
+import Navbar from "./components/common/Navbar";
+import WhatWeDo from "./components/WhatWeDo";
+import WeOffer from "./components/WeOffer";
 // import Marquee from "./components/Marquee";
-import Visible from './components/Visible';
-import OurVision from './components/OurVision';
-import './i18n';
-import i18n from './i18n';
-import Potential from './components/Potential';
-import Footer from './components/common/Footer';
-import ContactUs from './components/ContactUs';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsAndConditions from './components/TermsAndConditions';
-import BeginSection from './components/Begin';
-import ScrollToTop from './ScrollToTop';
-import { LanguageProvider } from './contexts/LanguageContext';
+import Visible from "./components/Visible";
+import OurVision from "./components/OurVision";
+import "./i18n";
+import i18n from "./i18n";
+import Potential from "./components/Potential";
+import Footer from "./components/common/Footer";
+import ContactUs from "./components/ContactUs";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
+import BeginSection from "./components/Begin";
+import ScrollToTop from "./ScrollToTop";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 // Home Page Component
 const HomePage = () => {
@@ -49,36 +49,36 @@ const LocalizedTermsAndConditions = () => {
 
 const AppContent = () => {
   return (
-    <div className='max-w-[1536px] mx-auto'>
+    <div className="max-w-[1536px] mx-auto">
       <ScrollToTop />
       <Navbar />
       <Routes>
         {/* Default (English) routes */}
-        <Route path='/' element={<HomePage />} />
-        <Route path='/privacy-policy' element={<LocalizedPrivacyPolicy />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<LocalizedPrivacyPolicy />} />
         <Route
-          path='/terms-and-conditions'
+          path="/terms-and-conditions"
           element={<LocalizedTermsAndConditions />}
         />
 
         {/* Localized routes for German */}
-        <Route path='/de' element={<HomePage />} />
-        <Route path='/de/privacy-policy' element={<LocalizedPrivacyPolicy />} />
+        <Route path="/de" element={<HomePage />} />
+        <Route path="/de/privacy-policy" element={<LocalizedPrivacyPolicy />} />
         <Route
-          path='/de/terms-and-conditions'
+          path="/de/terms-and-conditions"
           element={<LocalizedTermsAndConditions />}
         />
 
         {/* Localized routes for Serbian */}
-        <Route path='/sr' element={<HomePage />} />
-        <Route path='/sr/privacy-policy' element={<LocalizedPrivacyPolicy />} />
+        <Route path="/sr" element={<HomePage />} />
+        <Route path="/sr/privacy-policy" element={<LocalizedPrivacyPolicy />} />
         <Route
-          path='/sr/terms-and-conditions'
+          path="/sr/terms-and-conditions"
           element={<LocalizedTermsAndConditions />}
         />
 
         {/* Redirect all other routes to the home page */}
-        <Route path='*' element={<Navigate to='/' />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </div>
@@ -86,14 +86,14 @@ const AppContent = () => {
 };
 
 const App = () => {
-  // Force Serbian as default language when app mounts
+  // Force English as default language when app mounts
   useEffect(() => {
     if (
-      !localStorage.getItem('i18nextLng') ||
-      localStorage.getItem('i18nextLng') !== 'sr'
+      !localStorage.getItem("i18nextLng") ||
+      localStorage.getItem("i18nextLng") !== "en"
     ) {
-      localStorage.setItem('i18nextLng', 'sr');
-      i18n.changeLanguage('sr');
+      localStorage.setItem("i18nextLng", "en");
+      i18n.changeLanguage("en");
     }
   }, []);
 
