@@ -86,16 +86,7 @@ const AppContent = () => {
 };
 
 const App = () => {
-  // Force English as default language when app mounts
-  useEffect(() => {
-    if (
-      !localStorage.getItem("i18nextLng") ||
-      localStorage.getItem("i18nextLng") !== "en"
-    ) {
-      localStorage.setItem("i18nextLng", "en");
-      i18n.changeLanguage("en");
-    }
-  }, []);
+
 
   return (
     <LanguageProvider>
